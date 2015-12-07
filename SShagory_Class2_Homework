@@ -1,0 +1,67 @@
+Question 1:
+
+As the file name suggests the data is in tabular format so it's stored in a based db or spreadsheet manner.  So,the column values are separated by a tab.  In terms of their meaning I would say they represent separate values by header classification with supervised, descriptive elements.
+
+Question 2:
+
+By typing 'tail chiptole.tsv' one can see there are 1834 orders based on the 1st column.  Some order numbers have several items.  Some don't.
+
+Question 3:
+
+By catting the file and then issuing wc -l there are  4623 lines listed.
+
+Question 4:
+
+The Chicken Burrito is more popular over the Steak Burrito:  553 to 368. I issued two grep commands to find the answer
+
+a.  grep -i "chicken burrito" chipotle.tsv|wc -l
+b.  grep -i "steak burrito" chipotle.tsv |wc -l
+
+I wasn't aware of the 'c' option until looking at the solutions.  Will add this to my toolkit for work.  
+
+Question 5:
+
+Black beans are more popular than pinto beasn in a chicken burrito:  282 to 105.  I issued two grep commands to find the answer:
+
+a.  cat chipotle.tsv |grep -i "chicken burrito" |grep -i "black beans" | wc -l
+b.  cat chipotle.tsv |grep -i "chicken burrito" |grep -i "pinto beans"|wc -l
+
+Played with the 'c' option but didn't quite get it right.  Had to look at the answer.
+
+Question 6:
+
+I issued:  ls -ltr *sv
+
+Question 7:
+
+I used 'find -iname *dictionary*' (where i neutralizes the case) but came up with no files in DAT-10.  I checked manually but didn't find any. Looks like
+DAT8 had some.
+
+Question 8:
+
+I'm not sure if this qualifies as interesting but I decided to compare the head and tail orders.  Coincidently, there are the same number of total orders.  But the last set of orders had higher comparative price points.
+
+Scotts-MacBook-Pro:data scottshagory$ head chipotle.tsv |cut -f1,5
+order_id	item_price
+1	$2.39 
+1	$3.39 
+1	$3.39 
+1	$2.39 
+2	$16.98 
+3	$10.98 
+3	$1.69 
+4	$11.75 
+4	$9.25 
+Scotts-MacBook-Pro:data scottshagory$ tail chipotle.tsv |cut -f1,5
+1831	$9.25 
+1831	$2.15 
+1831	$1.50 
+1832	$8.75 
+1832	$4.45 
+1833	$11.75 
+1833	$11.75 
+1834	$11.25 
+1834	$8.75 
+1834	$8.75 
+Scotts-MacBook-Pro:data scottshagory$ 
+
