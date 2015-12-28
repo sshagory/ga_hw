@@ -1,0 +1,15 @@
+Since December 2008 the US Federal Reserve (and other developed world central banks) has 
+maintained interest rates charges at essentially zero.  The purpose has been to reduce
+the cost of borrowing, encourage household spending, and stimulate economic growth.  While
+some additional economic activity has occurred, these emergency interest rate reductions 
+have not created strong growth rates.
+
+A school of thought has emerged which argues these zero based interest rates are actually
+harming economic activity.  Proponents of this view argue evidence of this damage can
+be found by looking at how public companies are not spending money on new projects
+(capital expenditures) that will foster new growth.  Instead, public companies are using
+their profits to buy back company shares which creates little long-term economic value.
+
+So, is there a correlation between zero based interest rates and public company investment
+levels in new capitial expenditures vs share buybacks?  My hypothesis will be that there is 
+such a correlation and also seek to determine whether these are key indicators or not.  
